@@ -1,0 +1,119 @@
+@import url("reset.css");
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* display: grid;
+  place-items: center; */
+
+  /* position: relative; */
+}
+
+.todolistContainer {
+  padding: 52px 80px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.mainTitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.subTitle {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #94a3b8;
+}
+
+.inputWrapper {
+  width: 360px;
+  margin: 24px 0;
+}
+
+.todoInput {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 16px 24px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  color: #cbd5e1;
+  /* outline: none; */
+}
+
+.addButton {
+  width: 100%;
+  padding: 18px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0px 4px 12px rgba(2, 69, 241, 0.35); /* 좌우, 상하, 길이(번짐정도)*/
+  background-color: #0261f1;
+  color: white;
+  cursor: pointer;
+}
+
+.listWrapper {
+  border-top: 1px solid #e2e8f0;
+  /* max-height: 225px;
+  overflow-y: auto; */
+}
+
+.addedList {
+  display: grid;
+  grid-template-columns: 40px 260px 58px;
+  grid-row-gap: 8px;
+  align-items: center;
+  padding: 24px 0 16px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.checkbox {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+}
+
+.todo {
+  grid-column: 2/3;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  /* white-space: nowrap; */
+  /* overflow: auto; */
+}
+
+.time {
+  grid-column: 2/3;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #ff5300;
+}
+
+.deleteButton {
+  grid-column: 3/4;
+  padding: 8px 16px;
+  border: 1px solid #94a3b8;
+  border-radius: 4px;
+  background-color: white;
+  color: #94a3b8;
+  cursor: pointer;
+}
