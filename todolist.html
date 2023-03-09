@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>나만의 To Do List 만들기</title>
+    <link rel="stylesheet" href="todolist.css" />
+  </head>
+  <body>
+    <section class="todolistContainer">
+      <h1 class="mainTitle">나의 할 일 목록</h1>
+      <h2 class="subTitle">To-do-list</h2>
+      <div class="inputWrapper">
+        <input class="todoInput" type="text" placeholder="할 일 쓰기" />
+        <input class="todoInput" type="time" />
+        <button class="addButton">할 일 추가</button>
+      </div>
+      <div class="listWrapper">
+        <div class="addedList">
+          <input class="checkbox" type="checkbox" />
+          <p class="todo">아침에 일어나 달리기</p>
+          <span class="time">11:00</span>
+          <button class="deleteButton">삭제</button>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="todolist.js"></script>
+  </body>
+</html>
