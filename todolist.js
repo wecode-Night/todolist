@@ -44,15 +44,3 @@ const deleteTodo = (addedList) => {
 };
 
 addBtn.addEventListener("click", checkInput);
-
-// 선언식
-function test1() {
-  console.log(123);
-}
-
-// 표현식
-const test = function () {
-  console.log(456);
-};
-
-// 화살표
